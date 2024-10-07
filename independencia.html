@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia del Departamento de Guatemala, incluyendo su época colonial, independencia y era moderna.">
+    <title>Departamento de Guatemala - Historia Detallada</title>
+    <style>
+        /* Manteniendo el mismo estilo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            text-align: left;
+            cursor: pointer;
+            border-bottom: 1px solid #555;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #444;
+        }
+
+        .sidebar ul li ul {
+            display: none;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li ul li {
+            padding-left: 20px;
+        }
+
+        .sidebar ul li ul li:hover {
+            background-color: #555;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #ddd;
+        }
+
+        .sidebar .btn-inicio {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px auto;
+            display: block;
+            text-decoration: none;
+        }
+
+        .sidebar .btn-inicio:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .content section {
+            margin-bottom: 50px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        footer input, footer textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu(id) {
+            var menu = document.getElementById(id);
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <a href="index.html" class="btn-inicio">Inicio</a>
+        <h2>Guatemala</h2>
+        <ul>
+            <li onclick="toggleMenu('comidasMenu')">Comidas
+                <ul id="comidasMenu">
+                    <li><a href="pepian.html">Pepián</a></li>
+                    <li><a href="tostadas.html">Tostadas</a></li>
+                    <li><a href="chuchitos.html">Chuchitos</a></li>
+                    <li><a href="hilachas.html">Hilachas</a></li>
+                    <li><a href="jocon.html">Jocón</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('historiaMenu')">Historia
+                <ul id="historiaMenu">
+                    <li><a href="epoca-colonial.html">Época Colonial</a></li>
+                    <li><a href="independencia.html">Independencia</a></li>
+                    <li><a href="historia-moderna.html">Historia Moderna</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('lugaresMenu')">Lugares Famosos
+                <ul id="lugaresMenu">
+                    <li><a href="antigua.html">Antigua Guatemala</a></li>
+                    <li><a href="palacio-nacional.html">Palacio Nacional</a></li>
+                    <li><a href="catedral-metropolitana.html">Catedral Metropolitana</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('razasMenu')">Razas
+                <ul id="razasMenu">
+                    <li><a href="maya.html">Maya</a></li>
+                    <li><a href="garifuna.html">Garífuna</a></li>
+                    <li><a href="ladino.html">Ladino</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+ <!-- Contenido principal -->  
+<div class="content">  
+    <h1>Historia del Departamento de Guatemala</h1>  
+    <section>  
+        <h2>Independencia de Guatemala</h2>  
+        <p>La independencia de Guatemala fue parte de un proceso más amplio que se desarrolló en toda América Central. La declaración de independencia de Guatemala tuvo lugar el 15 de septiembre de 1821, cuando se proclamó la separación del dominio español. Este movimiento fue impulsado por diversas causas, incluyendo las ideas de la Ilustración, el descontento con el gobierno colonial, y la influencia de otros movimientos independentistas en América Latina.</p>  
+
+        <p>Después de la independencia, Guatemala se unió al Imperio Mexicano bajo Agustín de Iturbide durante un breve período, pero tras la caída del imperio, el país se convirtió en uno de los estados de la República Federal de Centro América en 1823. Sin embargo, esta federación enfrentó muchos problemas internos y conflictos entre sus miembros, lo que eventualmente llevó a su disolución en 1839.</p>  
+
+        <p>Durante la primera mitad del siglo XIX, Guatemala fue gobernada por una serie de dictaduras y regímenes autoritarios, incluyendo el de Rafael Carrera, quien logró establecer un gobierno centralizado y conservador. A lo largo de estos años, el país comenzó a experimentar un lento proceso de modernización en su economía y sociedad, pero también se mantuvieron profundas divisiones sociales y políticas.</p>  
+
+        <p>La educación y la construcción de infraestructura fueron aspectos clave durante esta época, ya que buscaban modernizar el país y promover una identidad nacional. Sin embargo, el legado colonial de inequidad social y económica continuó siendo un desafío significativo para el nuevo estado independiente.</p>  
+
+        <p>El camino hacia la plena consolidación de la independencia y la soberanía en Guatemala fue complicado, con luchas internas y externas que continuaron durante gran parte del siglo XIX y principios del XX. Sin embargo, la fecha del 15 de septiembre sigue siendo celebrada hoy como el Día de la Independencia en Guatemala, recordando la lucha por la libertad y la autodeterminación del pueblo guatemalteco.</p>  
+    </section>  
+    
+    <!-- Espacio para insertar video -->  
+    <section>  
+        <h2>Video sobre la Independencia de Guatemala</h2>  
+        <p>A continuación, puedes ver un video que detalla más sobre la independencia de Guatemala:</p>  
+        <div>  
+            <!-- Aquí puedes insertar el video -->  
+            <video controls width="100%">  
+                <source src="video-independencia.mp4" type="video/mp4">  
+                Tu navegador no soporta la reproducción de videos.  
+            </video>  
+        </div>  
+    </section>  
+    
+    <img src="independencia.png" alt="Independencia de Guatemala">  
+</div>
+    <footer>
+        <h2>Contáctanos</h2>
+        <form onsubmit="sendComment(event)">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

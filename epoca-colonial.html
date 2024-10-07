@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia del Departamento de Guatemala, incluyendo su época colonial, independencia y era moderna.">
+    <title>Departamento de Guatemala - Historia Detallada</title>
+    <style>
+        /* Manteniendo el mismo estilo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            text-align: left;
+            cursor: pointer;
+            border-bottom: 1px solid #555;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #444;
+        }
+
+        .sidebar ul li ul {
+            display: none;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li ul li {
+            padding-left: 20px;
+        }
+
+        .sidebar ul li ul li:hover {
+            background-color: #555;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #ddd;
+        }
+
+        .sidebar .btn-inicio {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px auto;
+            display: block;
+            text-decoration: none;
+        }
+
+        .sidebar .btn-inicio:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .content section {
+            margin-bottom: 50px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        footer input, footer textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu(id) {
+            var menu = document.getElementById(id);
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <a href="index.html" class="btn-inicio">Inicio</a>
+        <h2>Guatemala</h2>
+        <ul>
+            <li onclick="toggleMenu('comidasMenu')">Comidas
+                <ul id="comidasMenu">
+                    <li><a href="pepian.html">Pepián</a></li>
+                    <li><a href="tostadas.html">Tostadas</a></li>
+                    <li><a href="chuchitos.html">Chuchitos</a></li>
+                    <li><a href="hilachas.html">Hilachas</a></li>
+                    <li><a href="jocon.html">Jocón</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('historiaMenu')">Historia
+                <ul id="historiaMenu">
+                    <li><a href="epoca-colonial.html">Época Colonial</a></li>
+                    <li><a href="independencia.html">Independencia</a></li>
+                    <li><a href="historia-moderna.html">Historia Moderna</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('lugaresMenu')">Lugares Famosos
+                <ul id="lugaresMenu">
+                    <li><a href="antigua.html">Antigua Guatemala</a></li>
+                    <li><a href="palacio-nacional.html">Palacio Nacional</a></li>
+                    <li><a href="catedral-metropolitana.html">Catedral Metropolitana</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('razasMenu')">Razas
+                <ul id="razasMenu">
+                    <li><a href="maya.html">Maya</a></li>
+                    <li><a href="garifuna.html">Garífuna</a></li>
+                    <li><a href="ladino.html">Ladino</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Historia del Departamento de Guatemala</h1>
+        <section>
+            <h2>Época Colonial</h2>
+            <p>La época colonial en Guatemala comenzó con la llegada de los conquistadores españoles en el siglo XVI, bajo el mando de Pedro de Alvarado, quien lideró la campaña de conquista en 1524. Este proceso significó un cambio profundo para los pueblos indígenas que habitaban la región, como los mayas. La violencia, las enfermedades traídas por los europeos y el sistema de encomiendas redujeron drásticamente la población indígena.</p>
+
+            <p>Durante el periodo colonial, Guatemala formaba parte del Virreinato de la Nueva España, aunque administrativamente dependía de la Audiencia de Guatemala, creada en 1543. Esta Audiencia tenía jurisdicción sobre gran parte de Centroamérica, lo que le daba un papel clave en la gobernanza de la región. Santiago de los Caballeros, hoy conocida como Antigua Guatemala, se estableció como la capital de la Capitanía General de Guatemala en 1541, luego de que la primera capital, Ciudad Vieja, fuera destruida por un desastre natural.</p>
+
+            <p>La sociedad colonial estaba profundamente estratificada, con una clara jerarquía racial y social. Los españoles y los criollos ocupaban los puestos más altos en la administración y la iglesia, mientras que los indígenas eran forzados a trabajar en condiciones de servidumbre. Las encomiendas, un sistema que asignaba tierras y mano de obra indígena a los colonos españoles, se convirtieron en uno de los principales mecanismos de explotación de los pueblos originarios.</p>
+
+            <p>En el ámbito religioso, la Iglesia Católica desempeñó un papel central en la vida colonial. Los misioneros, principalmente franciscanos y dominicos, llegaron a evangelizar a las poblaciones indígenas, lo que llevó a una fusión de creencias religiosas. Se erigieron numerosas iglesias y conventos en todo el territorio, algunos de los cuales aún se conservan como testimonios de esta época. La educación y la atención hospitalaria también estuvieron a cargo de órdenes religiosas, que fundaron algunas de las primeras instituciones en la región.</p>
+
+            <p>A lo largo del período colonial, Guatemala sufrió desastres naturales, incluyendo terremotos y erupciones volcánicas, que devastaron ciudades enteras. Uno de los más notables fue el terremoto de 1773, que destruyó gran parte de Santiago de los Caballeros, obligando a las autoridades coloniales a trasladar la capital a la actual Ciudad de Guatemala en 1776. Este movimiento marcó un hito en la reorganización administrativa del territorio, pero también en la expansión urbana y el desarrollo arquitectónico de la nueva ciudad.</p>
+
+            <p>La economía colonial estuvo basada principalmente en la agricultura, con productos como el cacao, el añil y, posteriormente, el café, que comenzaron a jugar un papel crucial en el comercio exterior. Sin embargo, la riqueza generada por estas actividades estaba concentrada en manos de una élite colonial, mientras que las clases trabajadoras, mayoritariamente indígenas, vivían en condiciones de extrema pobreza.</p>
+        </section>
+        
+        <!-- Espacio para insertar video -->
+        <section>
+            <h2>Video sobre la Época Colonial</h2>
+            <p>A continuación, puedes ver un video que detalla más sobre la época colonial en Guatemala:</p>
+            <div>
+                <!-- Aquí puedes insertar el video -->
+                <video controls width="100%">
+                    <source src="video-colonial.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </section>
+        
+        <img src="colonial.png" alt="Guatemala">
+    </div>
+
+    <footer>
+        <h2>Contáctanos</h2>
+        <form onsubmit="sendComment(event)">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

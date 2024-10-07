@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia del Departamento de Guatemala, incluyendo su época colonial, independencia y era moderna.">
+    <title>Departamento de Guatemala - Historia Detallada</title>
+    <style>
+        /* Manteniendo el mismo estilo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            text-align: left;
+            cursor: pointer;
+            border-bottom: 1px solid #555;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #444;
+        }
+
+        .sidebar ul li ul {
+            display: none;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li ul li {
+            padding-left: 20px;
+        }
+
+        .sidebar ul li ul li:hover {
+            background-color: #555;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #ddd;
+        }
+
+        .sidebar .btn-inicio {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px auto;
+            display: block;
+            text-decoration: none;
+        }
+
+        .sidebar .btn-inicio:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .content section {
+            margin-bottom: 50px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        footer input, footer textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu(id) {
+            var menu = document.getElementById(id);
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <a href="index.html" class="btn-inicio">Inicio</a>
+        <h2>Guatemala</h2>
+        <ul>
+            <li onclick="toggleMenu('comidasMenu')">Comidas
+                <ul id="comidasMenu">
+                    <li><a href="pepian.html">Pepián</a></li>
+                    <li><a href="tostadas.html">Tostadas</a></li>
+                    <li><a href="chuchitos.html">Chuchitos</a></li>
+                    <li><a href="hilachas.html">Hilachas</a></li>
+                    <li><a href="jocon.html">Jocón</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('historiaMenu')">Historia
+                <ul id="historiaMenu">
+                    <li><a href="epoca-colonial.html">Época Colonial</a></li>
+                    <li><a href="independencia.html">Independencia</a></li>
+                    <li><a href="historia-moderna.html">Historia Moderna</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('lugaresMenu')">Lugares Famosos
+                <ul id="lugaresMenu">
+                    <li><a href="antigua.html">Antigua Guatemala</a></li>
+                    <li><a href="palacio-nacional.html">Palacio Nacional</a></li>
+                    <li><a href="catedral-metropolitana.html">Catedral Metropolitana</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleMenu('razasMenu')">Razas
+                <ul id="razasMenu">
+                    <li><a href="maya.html">Maya</a></li>
+                    <li><a href="garifuna.html">Garífuna</a></li>
+                    <li><a href="ladino.html">Ladino</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+<!-- Contenido principal -->  
+<div class="content">  
+    <h1>Historia del Departamento de Guatemala</h1>  
+    <section>  
+        <h2>Historia Moderna de Guatemala</h2>  
+        <p>La historia moderna de Guatemala se caracteriza por eventos cruciales que han moldeado la nación desde mediados del siglo XX. Después de la independencia, el país atravesó un periodo de inestabilidad política, marcado por golpes de estado y dictaduras militares. En 1954, un golpe de estado, apoyado por Estados Unidos, derrocó al gobierno democráticamente electo de Jacobo Árbenz, quien había implementado reformas agrarias que beneficiaban a los campesinos y amenazaban los intereses de las compañías estadounidenses.</p>  
+
+        <p>Este golpe desencadenó una larga y brutal guerra civil que duró desde 1960 hasta 1996. Durante este periodo, miles de guatemaltecos fueron víctimas de violencia política, incluyendo asesinatos, desapariciones forzadas y desplazamientos forzados. Pueblos indígenas, en particular, sufrieron las consecuencias, enfrentando políticas de genocidio y represión.</p>  
+
+        <p>En 1996 se firmó un acuerdo de paz que puso fin al conflicto armado, dando paso a un proceso de reconciliación nacional y un esfuerzo por establecer un estado democrático y participativo. Sin embargo, los desafíos persistieron, incluyendo la pobreza, la desigualdad y la corrupción, que han continuado afectando a la sociedad guatemalteca.</p>  
+
+        <p>En las décadas siguientes, Guatemala ha enfrentado varios retos, desde el crecimiento de la violencia de pandillas hasta crisis políticas y desastres naturales, como los huracanes y erupciones volcánicas. Los esfuerzos por mejorar la educación, la salud y la infraestructura siguen siendo una prioridad para el desarrollo del país.</p>  
+
+        <p>La actualidad guatemalteca es un reflejo de las luchas del pasado y la búsqueda de un futuro en el que todos los ciudadanos tengan acceso a oportunidades equitativas. A lo largo de los años, la sociedad civil ha desempeñado un papel crucial en la promoción de la justicia y la defensa de los derechos humanos, resaltando la importancia de la participación ciudadana en el impulso del cambio social.</p>  
+    </section>  
+    
+    <!-- Espacio para insertar video -->  
+    <section>  
+        <h2>Video sobre la Historia Moderna de Guatemala</h2>  
+        <p>A continuación, puedes ver un video que detalla más sobre la historia moderna de Guatemala:</p>  
+        <div>  
+            <!-- Aquí puedes insertar el video -->  
+            <video controls width="100%">  
+                <source src="video-historia-moderna.mp4" type="video/mp4">  
+                Tu navegador no soporta la reproducción de videos.  
+            </video>  
+        </div>  
+    </section>  
+    
+    <img src="historia-moderna.png" alt="Historia Moderna de Guatemala">  
+</div>
+    <footer>
+        <h2>Contáctanos</h2>
+        <form onsubmit="sendComment(event)">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
